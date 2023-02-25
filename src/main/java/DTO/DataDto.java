@@ -1,24 +1,23 @@
 package DTO;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Table(name = "datadto")
 public class DataDto {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int billNo;
 
     private String date;
