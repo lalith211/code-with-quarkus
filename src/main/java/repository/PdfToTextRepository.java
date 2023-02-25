@@ -1,8 +1,8 @@
 package repository;
 
 import DTO.DataDto;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
-public interface PdfToTextRepository extends JpaRepository<DataDto, Long> {
+public interface PdfToTextRepository extends CrudRepository<DataDto, String> {
 
 }

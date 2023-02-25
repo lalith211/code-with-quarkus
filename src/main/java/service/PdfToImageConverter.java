@@ -2,10 +2,13 @@ package service;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.rendering.PDFRenderer;
+import org.jvnet.hk2.annotations.Service;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+@Service
 public class PdfToImageConverter {
     public static void convert(String pdfFilePath, String outputImagePath) throws IOException {
         PDDocument document = PDDocument.load(new File(pdfFilePath));
