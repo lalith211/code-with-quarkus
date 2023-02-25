@@ -1,4 +1,31 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  position: fixed;
+  height: 90%;
+  width: 30%;
+  display: inline-table;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: 100%;
+
+}
+
+#pdf{
+  font-style: inherit;
+  color: darkcyan;
+}
+.form-label {
+  padding-bottom: 20px;
+  color: darkblue;
+}
+.mb-3{
+  padding-top: 20px;
+}
+#yty{
+  background-color: azure;
+  padding: 24px 0 16px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

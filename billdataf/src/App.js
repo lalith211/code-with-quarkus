@@ -9,15 +9,18 @@ export default function App() {
   const [key, setKey] = useState("home");
   return (
       <div className="App">
-        <h1>Pdf Extractor</h1>
+        <h1 id="pdf">PDF Extractor</h1>
+
+          <div id="yty" class="p-4">
         <Tabs activeKey={key} onSelect={(k) => setKey(k)} className="mb-3">
-          <Tab eventKey="home" title="Home">
+          <Tab  id="controlled-tabs" eventKey="home" title="Home">
             <Home />
           </Tab>
           <Tab eventKey="details" title="Details">
             <Details />
           </Tab>
         </Tabs>
+      </div>
       </div>
   );
 }
