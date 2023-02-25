@@ -26,7 +26,6 @@ public class ImageToTextConverter {
         instance.setDatapath(tessDataFolder.getAbsolutePath());
         String result = instance.doOCR(imageFile);
         DataDto example = converter.conv(result);
-        System.out.println(example);
         pdfToTextRepository.save(example);
         return "success";
     }

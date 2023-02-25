@@ -1,9 +1,9 @@
 package resource;
 
 import DTO.DataDto;
-import io.smallrye.mutiny.Uni;
 import org.glassfish.jersey.media.multipart.FormDataParam;
-import service.Converter;
+import org.springframework.beans.factory.annotation.Autowired;
+import repository.PdfToTextRepository;
 import service.ImageToTextConverter;
 import service.PdfToImageConverter;
 
@@ -15,12 +15,16 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Optional;
 
 @Path("/")
 @RequestScoped
 public class PdfToTextResource {
     @Inject
     ImageToTextConverter imageToTextConverter;
+    @Autowired
+    PdfToTextRepository pdfToTextRepository;
+
     @POST
     @Path("/pdf-to-text")
     @Produces(MediaType.TEXT_PLAIN)
@@ -34,11 +38,9 @@ public class PdfToTextResource {
         return result;
     }
 
-//    @GET
-//    @Path("/get-bill-details")
-//    @Produces(MediaType.APPLICATION_JSON)
-//    @Consumes(MediaType.APPLICATION_JSON)
-//    public Uni<DataDto> gettingBillData(@PathParam("billNo") long billNo){
-//        return DataDto.findById(billNo);
-//    }
+    @GET
+    @Path("/get-bill-details/{BillNo}")
+    public Optional<DataDto> gettingBillData(@PathParam("BillNo") String billNo) {
+        return pdfToTextRepository.findById(billNo);
+    }
 }

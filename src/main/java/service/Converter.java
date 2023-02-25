@@ -24,7 +24,7 @@ public class Converter {
             if (k.equals("Name"))  {
                 for(int j=0;j<words[i+1].length();j++) {
                     int x=(int)words[i+1].charAt(j);
-                    if((int)x==160) {
+                    if((int)x==10) {
                         break;
                     }
                     Name1=Name1+words[i+1].charAt(j);
@@ -34,7 +34,7 @@ public class Converter {
             if(k.equals("Phone:")) {
                 for(int j=0;j<words[i+1].length();j++) {
                     int x=(int)words[i+1].charAt(j);
-                    if((int)x==160) {
+                    if((int)x==10) {
                         break;
                     }
                     phone=phone+words[i+1].charAt(j);
@@ -44,7 +44,7 @@ public class Converter {
             if(k.equals("Status")) {
                 for(int j=0;j<words[i+1].length();j++) {
                     int x=(int)words[i+1].charAt(j);
-                    if((int)x==160) {
+                    if((int)x==10) {
                         break;
                     }
                     status=status+words[i+1].charAt(j);
@@ -54,8 +54,8 @@ public class Converter {
             if(k.equals("Number:")) {
                 for(int j=0;j<words[i+1].length();j++) {
                     int x=(int)words[i+1].charAt(j);
-                    if((int)x==160) {
-                        break;
+                    if((int)x==10) {
+                        break; 
                     }
                     billNo=billNo+words[i+1].charAt(j);
                 }
@@ -63,7 +63,7 @@ public class Converter {
             if(k.equals("Date:")) {
                 for(int j=0;j<words[i+1].length();j++) {
                     int x=(int)words[i+1].charAt(j);
-                    if((int)x==160) {
+                    if((int)x==10) {
                         break;
                     }
                     date=date+words[i+1].charAt(j);
@@ -73,7 +73,7 @@ public class Converter {
             if(k.equals("Truck")) {
                 for(int j=0;j<words[i+2].length();j++) {
                     int x=(int)words[i+2].charAt(j);
-                    if((int)x==160) {
+                    if((int)x==10) {
                         break;
                     }
                     truckNum=truckNum+words[i+2].charAt(j);
@@ -100,7 +100,7 @@ public class Converter {
             if(k.equals("Amount")) {
                 for(int j=0;j<words[i+1].length();j++) {
                     int x=(int)words[i+1].charAt(j);
-                    if((int)x==160) {
+                    if((int)x==10) {
                         break;
                     }
                     amount=amount+words[i+1].charAt(j);
