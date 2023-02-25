@@ -9,12 +9,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-size: 100%;
+  border-radius: 25px;
 
 }
 
 #pdf{
   font-style: inherit;
-  color: darkcyan;
+  color: goldenrod;
+  background-color: azure;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  alignment: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0  rgba(0, 0, 0, 0.19) ;
+  font-size: 35px;
+  border-radius: 8px;
+
 }
 .form-label {
   padding-bottom: 20px;
@@ -28,4 +37,8 @@
   padding: 24px 0 16px 0;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+}
+body{
+  background-color: #FEFF9E;
 }
