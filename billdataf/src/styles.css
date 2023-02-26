@@ -1,0 +1,56 @@
+.App{
+  position: fixed;
+  width: 100%;
+  height: 70%;
+
+}
+body{
+  background-image: url('https://mediatech.ventures/wp-content/uploads/2021/12/Creating-a-company-as-a-non-tech-founder1.png');
+  background-size: cover;
+  background-position: center;
+}
+.AppBody {
+  font-family: sans-serif;
+  text-align: center;
+  position: fixed;
+  height: 90%;
+  width: 30%;
+  display: inline-table;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: 100%;
+  border-radius: 25px;
+}
+
+#pdf{
+  font-style: inherit;
+  color: goldenrod;
+  background-color: azure;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  alignment: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0  rgba(0, 0, 0, 0.19) ;
+  font-size: 35px;
+  border-radius: 8px;
+
+}
+.form-label {
+  padding-bottom: 20px;
+  color: darkblue;
+}
+.mb-3{
+  padding-top: 20px;
+}
+#yty{
+  background-color: azure;
+  padding: 24px 0 16px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+
