@@ -5,7 +5,7 @@ export default () => {
   const [data, setData] = useState({});
   const handleSubmit = (e) => {
     e.preventDefault();
-    setData({ key1: "value1", key2: "value2" });
+    setData({ key1: "value1", key2: "value2" , key3: "value3" });
   };
   return (
       <div>
