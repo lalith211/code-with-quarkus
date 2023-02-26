@@ -41,6 +41,7 @@ public class PdfToTextResource {
     @GET
     @Path("/get-bill-details/{BillNo}")
     public Optional<DataDto> gettingBillData(@PathParam("BillNo") String billNo) {
-        return pdfToTextRepository.findById(billNo);
+        return this.pdfToTextRepository.findById(billNo);
     }
+
 }
