@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Form, InputGroup, Button, Table } from "react-bootstrap";
+
 export default () => {
   const [data, setData] = useState({});
   const [billNo, setBillNo] = useState("");
   const [message, setMessage] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    setData({ key1: "value1", key2: "value2" , key3: "value3" });
     fetch(`http://localhost:8080/get-bill-details/${billNo}`, {
                     mode: 'no-cors',
                     method: "GET",
